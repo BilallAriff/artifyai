@@ -46,9 +46,6 @@ body {
   align-items: center;
 }
 
-.roate-90 {
-}
-
 .rotate-180 {
   transform: rotate(180deg); /* Rotate for open state */
   transition: transform 0.2s ease-in-out; /* Add smooth transition */
@@ -110,4 +107,91 @@ body {
   border-radius: 10px;
   padding: 25px;
   max-width: 550px;
+}
+
+/* ======================= Login Page ========================= */
+
+/* styles/globals.css */
+/* html,
+body,
+#__next {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background-image: linear-gradient(
+    109.6deg,
+    rgba(61, 131, 97, 1) 11.2%,
+    rgba(28, 103, 88, 1) 91.1%
+  ); */
+  /* background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); Adjust the opacity to make it darker or lighter */
+  z-index: 1;
+}
+
+.login-container {
+  background-color: #ffffff33;
+  border: 1px solid #ffffff17;
+  border-radius: 20px;
+  padding: 20px;
+  width: 350px;
+}
+
+.custom-input-v2 {
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  border: 1px solid lightgray;
+  background-color: #f9fbf2;
+}
+
+.custom-input-v2:focus {
+  outline: 2px solid #9eb25d; /* Change the color and thickness of the outline */
+  outline-offset: 2px;
 }
